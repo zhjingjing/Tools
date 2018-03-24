@@ -1,7 +1,7 @@
 package com.mydemo.mvp;
 
 /**
- * Created by Administrator on 2018/3/22.
+ * Created by zh on 2018/3/22.
  */
 
 public class Presenter{
