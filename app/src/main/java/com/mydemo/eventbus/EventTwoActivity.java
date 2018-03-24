@@ -20,6 +20,7 @@ public class EventTwoActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_two);
         initView();
+
     }
 
     private void initView() {

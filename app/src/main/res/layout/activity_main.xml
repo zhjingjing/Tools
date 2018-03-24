@@ -5,8 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#339933"
     tools:context="com.mydemo.MainActivity">
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        >
+    </RelativeLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,5 +45,18 @@
         android:padding="10dp"
         android:background="#f1f1f1"
         android:id="@+id/tv_event_bus"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:text="design设计"
+        android:padding="10dp"
+        android:background="#f1f1f1"
+        android:id="@+id/tv_design"
         />
 </LinearLayout>

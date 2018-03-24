@@ -1,14 +1,14 @@
 package com.mydemo;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class CountDownActivity extends AppCompatActivity {
+public class CountDownActivity extends Activity {
 
     private LinearLayout activityCountDown;
     private TextView tvTime;
