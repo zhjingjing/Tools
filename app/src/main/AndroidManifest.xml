@@ -24,9 +24,10 @@
         <activity android:name=".eventbus.EventoneActivity" />
         <activity android:name=".eventbus.EventTwoActivity" />
         <activity android:name=".thread.MultiThreadActivity" />
-        <activity android:name=".design.DesignActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            ></activity>
+        <activity
+            android:name=".design.DesignActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".picasso.PicassoActivity"></activity>
     </application>
 
 </manifest>

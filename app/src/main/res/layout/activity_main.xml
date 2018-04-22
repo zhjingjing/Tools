@@ -59,4 +59,16 @@
         android:background="#f1f1f1"
         android:id="@+id/tv_design"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:text="picasso"
+        android:padding="10dp"
+        android:background="#f1f1f1"
+        android:id="@+id/tv_picasso"
+        />
 </LinearLayout>

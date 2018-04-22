@@ -11,6 +11,7 @@ import com.mydemo.design.DesignActivity;
 import com.mydemo.eventbus.EventoneActivity;
 import com.mydemo.mvp.MainView;
 import com.mydemo.mvp.Presenter;
+import com.mydemo.picasso.PicassoActivity;
 import com.mydemo.utils.ScreenUtils;
 
 import butterknife.BindView;
@@ -29,6 +30,8 @@ public class MainActivity extends Activity {
     TextView tvDesign;
     @BindView(R.id.activity_main)
     LinearLayout activityMain;
+    @BindView(R.id.tv_picasso)
+    TextView tvPicasso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +51,7 @@ public class MainActivity extends Activity {
 
     }
 
-    @OnClick({R.id.tv_mvp, R.id.tv_count_down, R.id.tv_event_bus, R.id.tv_design})
+    @OnClick({R.id.tv_mvp, R.id.tv_count_down, R.id.tv_event_bus, R.id.tv_design,R.id.tv_picasso})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_mvp:
@@ -61,6 +64,9 @@ public class MainActivity extends Activity {
                 break;
             case R.id.tv_design:
                 startActivity(new Intent(MainActivity.this, DesignActivity.class));
+                break;
+            case R.id.tv_picasso:
+                startActivity(new Intent(MainActivity.this, PicassoActivity.class));
                 break;
         }
     }

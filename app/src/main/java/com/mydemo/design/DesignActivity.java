@@ -1,5 +1,6 @@
 package com.mydemo.design;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,10 +14,8 @@ import com.mydemo.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class DesignActivity extends AppCompatActivity {
+public class DesignActivity extends Activity {
 
-    @BindView(R.id.tool_bar)
-    Toolbar toolBar;
     @BindView(R.id.float_action_btn)
     FloatingActionButton floatActionBtn;
     @BindView(R.id.rel_root)
@@ -27,7 +26,6 @@ public class DesignActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_design);
         ButterKnife.bind(this);
-        setSupportActionBar(toolBar);
         floatActionBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
