@@ -13,6 +13,8 @@ import com.mydemo.mvp.MainView;
 import com.mydemo.mvp.Presenter;
 import com.mydemo.picasso.PicassoActivity;
 import com.mydemo.utils.ScreenUtils;
+import com.mydemo.video.SurfaceActivity;
+import com.mydemo.video.VideoActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,6 +34,8 @@ public class MainActivity extends Activity {
     LinearLayout activityMain;
     @BindView(R.id.tv_picasso)
     TextView tvPicasso;
+    @BindView(R.id.tv_videoview)
+    TextView tvVideoview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +43,7 @@ public class MainActivity extends Activity {
         ScreenUtils.cancelState(this);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        activityMain.setPadding(0 , 0 , 0 , ScreenUtils.getHasVirtualKey(this) - ScreenUtils.getNoHasVirtualKey(this));
+        activityMain.setPadding(0, 0, 0, ScreenUtils.getHasVirtualKey(this) - ScreenUtils.getNoHasVirtualKey(this));
 
         Presenter presenter = new Presenter(new MainView() {
             @Override
@@ -51,7 +55,7 @@ public class MainActivity extends Activity {
 
     }
 
-    @OnClick({R.id.tv_mvp, R.id.tv_count_down, R.id.tv_event_bus, R.id.tv_design,R.id.tv_picasso})
+    @OnClick({R.id.tv_mvp, R.id.tv_count_down, R.id.tv_event_bus, R.id.tv_design, R.id.tv_picasso,R.id.tv_videoview})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_mvp:
@@ -68,6 +72,10 @@ public class MainActivity extends Activity {
             case R.id.tv_picasso:
                 startActivity(new Intent(MainActivity.this, PicassoActivity.class));
                 break;
+            case R.id.tv_videoview:
+                startActivity(new Intent(MainActivity.this, SurfaceActivity.class));
+                break;
         }
     }
+
 }

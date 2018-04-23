@@ -27,7 +27,9 @@
         <activity
             android:name=".design.DesignActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".picasso.PicassoActivity"></activity>
+        <activity android:name=".picasso.PicassoActivity" />
+        <activity android:name=".video.VideoActivity" />
+        <activity android:name=".video.SurfaceActivity"></activity>
     </application>
 
 </manifest>
